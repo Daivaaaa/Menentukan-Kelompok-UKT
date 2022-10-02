@@ -1,0 +1,45 @@
+#include <iostream>
+ 
+int main()
+{
+    using namespace std;
+
+    long ayah, ibu, total, input; 
+    
+ 
+    //Memasukkan data penghasilan ayah
+    cout << "Masukan penghasilan Ayah per bulan : ";
+    cin >> ayah;
+    cout << endl;
+ 
+    //Memasukkan data penghasilan ibu
+    cout << "Masukan penghasilan Ibu perbulan : ";
+    cin >> ibu;
+    cout << endl;
+ 
+    //menghitung total Penghasilan orang tua
+    total = ayah + ibu;
+    cout << "Total Penghasilan orang tua perbulan : " << total << " Rupiah" << endl;
+    cout << endl;
+    
+    //menghitung pembagian kelompok UKT
+    cout << "Kelompok : ";
+    if (total >= 30000000)
+    {cout << "UKT 8" << endl;}
+    else if (total < 30000000 && total >= 20000000)
+    {cout << "UKT 7" << endl;}
+    else if (total < 20000000 && total >= 10000000)
+    {cout << "UKT 6" << endl;}
+    else if (total < 10000000 && total >= 5000000)
+    {cout << "UKT 5" << endl;}
+    else if (total < 5000000 && total >= 3500000)
+    {cout << "UKT 4" << endl;}
+    else if (total < 3500000 && total >= 2000000)
+    {cout << "UKT 3" << endl;}
+    else if (total < 2000000 && total >= 500000)
+    {cout << "UKT 2" << endl;}
+    else if (total < 500000 )
+    {cout << "UKT 1" << endl;}
+    
+    return 0;
+}
